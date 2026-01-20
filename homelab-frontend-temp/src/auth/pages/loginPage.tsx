@@ -1,10 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { userModel } from "../models/user.model.jsx";
-
-const navigate = useNavigate();
-const user = new userModel();
+import { userModel } from "../models/user.model.tsx";
 
 const Loginform = () => {
+  const navigate = useNavigate();
+  const user = new userModel();
   return (
     <form className="login-container">
       <h2>Login</h2>

@@ -6,9 +6,7 @@ export default function LandingPage() {
 
   return (
     <div>
-      <h2>
-        <p>hi.</p>
-      </h2>
+      <h2>hi.</h2>
       <button onClick={() => navigate("/login")}> Goto Login </button>
     </div>
   );

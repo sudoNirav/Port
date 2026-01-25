@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/app/page.tsx"],"sourcesContent":["export default function Page() {\n  return <h1>Hello, Next.js!</h1>;\n}\n"],"names":[],"mappings":"mKAAe,SAAS,IACtB,MAAO,CAAA,EAAA,EAAA,GAAA,EAAC,KAAA,UAAG,mBACb"}

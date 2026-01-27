@@ -5,6 +5,8 @@ export default function HomelabRootLayout({
 }) {
   return (
     <html lang="en">
+      <title>Homelab</title>
+      <head></head>
       <body>{children}</body>
     </html>
   );

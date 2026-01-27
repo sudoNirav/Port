@@ -1,9 +1,11 @@
+import Link from "next/dist/client/link";
+
 export default function HomePage() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <h1>Hi, this is the lander (for now) </h1>
       <button>
-        <h2>Goto Login</h2>
+        <Link href="/login">Go to login</Link>
       </button>
     </div>
   );

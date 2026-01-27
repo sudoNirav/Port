@@ -7,7 +7,16 @@ export default function HomelabRootLayout({
     <html lang="en">
       <title>Homelab</title>
       <head></head>
-      <body>{children}</body>
+      <body
+        style={{
+          backgroundColor: "#000000",
+          color: "#c1c1c1",
+          margin: 20,
+          minHeight: "100vh",
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }

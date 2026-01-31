@@ -9,3 +9,17 @@ services:
       - "3000:3000"
     environment:
       NODE_ENV: production
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 8G
+        reservations:
+          cpus: "0.5"
+          memory: 4G

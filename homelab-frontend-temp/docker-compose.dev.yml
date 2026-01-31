@@ -1,9 +1,19 @@
 services:
   frontend:
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
-    command: npm run dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: homelab-frontend-prod
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
     environment:
-      - NODE_ENV=development
+      NODE_ENV: production
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 4G
+        reservations:
+          cpus: "0.5"
+          memory: 1G

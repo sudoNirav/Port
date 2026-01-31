@@ -1,24 +1,5 @@
-# services:
-#   frontend:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     container_name: homelab-frontend-prod
-#     restart: unless-stopped
-#     ports:
-#       - "3000:3000"
-#     environment:
-#       NODE_ENV: production
-#       Uncomment for development with hot reload:
-#         volumes:
-#           - .:/app
-#           - /app/node_modules
-#           - /app/.next
-#         command: npm run dev
-
 services:
   frontend:
-    # This overrides the production settings when called
     volumes:
       - .:/app
       - /app/node_modules
